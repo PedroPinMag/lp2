@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char *argv[]);
+
+int main(int argc, char *argv[])
+{
+	int total = 0;
+	for(int i = 1; i < argc; i++){
+		total = total + strtol(argv[i], NULL, 10);
+	}
+
+	printf("Total = %d\n", total);
+
+	return 0;
+}
+
+
